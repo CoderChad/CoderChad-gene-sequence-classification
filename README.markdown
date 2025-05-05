@@ -62,18 +62,9 @@ gene-sequence-classification/
 - **SVM**: Strong performance (~0.80-0.85) but slower due to non-linear kernel.
 - **Logistic Regression**: Fastest but lower accuracy (~0.75-0.80) due to complex feature space.
 
-#### Confusion Matrices
-- **Random Forest**:
-  ![Random Forest Confusion Matrix](figures/confusion_matrix_random_forest.png)
-- **SVM**:
-  ![SVM Confusion Matrix](figures/confusion_matrix_svm.png)
-- **Logistic Regression**:
-  ![Logistic Regression Confusion Matrix](figures/confusion_matrix_logistic_regression.png)
 
 
-#### Model Comparison
-- Bar plot comparing model accuracies:
-  ![Model Comparison](figures/model_comparison.png)
+
 
 ## Challenges and Solutions
 - **High-Dimensional Features**: 3-mer extraction generates thousands of features. Random Forest handles sparsity effectively, while SVM uses a kernel trick for non-linearity.
@@ -83,7 +74,6 @@ gene-sequence-classification/
 ## Insights
 - **Bioinformatics**: Processes real genomic data from UCI Genomic Benchmarks, demonstrating sequence analysis and feature engineering.
 - **AI/ML**: Compares multiple models (Random Forest, SVM, Logistic Regression), showcasing versatility and evaluation skills.
-- **Portfolio-Ready**: Includes interactive Colab notebook, clear visualizations, and detailed documentation, tailored for a Master's in AI committee.
 
 ## References
 - UCI Genomic Benchmarks: [https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks](https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks)
