@@ -57,10 +57,6 @@ gene-sequence-classification/
 - **GC Content**: Promoters have slightly higher GC content, reflecting their biological role in transcription.
 - **K-mer Frequencies**: CG-rich 3-mers are prevalent, indicating potential regulatory motifs.
 
-![Sequence Length Distribution](figures/sequence_length.png)
-![GC Content by Class](figures/gc_content.png)
-![Top 10 3-mers](figures/top_kmers.png)
-
 ### Model Performance
 - **Random Forest**: Achieves the highest accuracy (~0.85-0.90) and AUC, leveraging feature importance for interpretability.
 - **SVM**: Strong performance (~0.80-0.85) but slower due to non-linear kernel.
