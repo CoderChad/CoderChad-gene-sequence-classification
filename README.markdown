@@ -18,16 +18,13 @@ This project demonstrates expertise in **bioinformatics** and **AI/ML** by class
 gene-sequence-classification/
 ├── data/
 │   └── README.md                   # Instructions for downloading the dataset
-├── figures/
 │   ├── sequence_length.png         # Sequence length distribution
 │   ├── gc_content.png              # GC content by class
 │   ├── top_kmers.png               # Top 10 3-mers by frequency
 │   ├── confusion_matrix_random_forest.png      # Confusion matrix for Random Forest
 │   ├── confusion_matrix_svm.png                # Confusion matrix for SVM
 │   ├── confusion_matrix_logistic_regression.png  # Confusion matrix for Logistic Regression
-│   ├── roc_curves.png              # ROC curves for  # ROC curves for all models
 │   ├── model_comparison.png        # Model accuracy comparison
-├── gene_sequence_classification.py  # Main pipeline script
 ├── notebook.ipynb                   # Jupyter Notebook with exploration and visualizations
 ├── README.md                        # Project overview (this file)
 ├── requirements.txt                 # Python dependencies
@@ -40,23 +37,10 @@ gene-sequence-classification/
 - Google Colab (recommended for running `notebook.ipynb`)
 - Git (for cloning the repository)
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/gene-sequence-classification.git
-   cd gene-sequence-classification
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   In Google Colab, run:
-   ```python
-   !pip install genomic_benchmarks biopython
-   ```
+
 
 ### Running the Project
-#### Option 1: Google Colab (Recommended)
+#### Option 1: Google Colab
 1. Open `notebook.ipynb` in Google Colab:
    - Upload `notebook.ipynb` via File > Upload Notebook.
    - Or use this link: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/your-colab-link) *(Replace with your shared Colab link)*.
@@ -66,12 +50,6 @@ gene-sequence-classification/
    - **Model Results**: Accuracy, confusion matrices, ROC curves, model comparison.
 4. Save the notebook with outputs (File > Save a Copy in Drive).
 
-#### Option 2: Local Machine
-1. Run the script:
-   ```bash
-   python gene_sequence_classification.py
-   ```
-2. Outputs are saved to `figures/` and `feature_importance_rf.csv`.
 
 ## Results
 ### Data Insights
@@ -96,9 +74,6 @@ gene-sequence-classification/
 - **Logistic Regression**:
   ![Logistic Regression Confusion Matrix](figures/confusion_matrix_logistic_regression.png)
 
-#### ROC Curves
-- Combined ROC curves show model discrimination ability:
-  ![ROC Curves](figures/roc_curves.png)
 
 #### Model Comparison
 - Bar plot comparing model accuracies:
@@ -109,13 +84,7 @@ gene-sequence-classification/
 - **Dataset Size**: 36,131 sequences require significant memory. Subsampling (e.g., 10,000 sequences) can be implemented for prototyping.
 - **Interpretability**: Feature importance analysis (saved in `feature_importance_rf.csv`) identifies key k-mers, aiding biological interpretation.
 
-## Future Extensions
-- Experiment with different k-mer sizes (e.g., k=4 or k=5) to capture longer motifs.
-- Incorporate deep learning (e.g., CNN or transformer like DNABERT) for improved performance.
-- Visualize sequence logos for top k-mers using `logomaker` to highlight regulatory patterns.
-- Develop a Flask API for real-time sequence classification.
-
-## Why This Project Stands Out
+## Insights
 - **Bioinformatics**: Processes real genomic data from UCI Genomic Benchmarks, demonstrating sequence analysis and feature engineering.
 - **AI/ML**: Compares multiple models (Random Forest, SVM, Logistic Regression), showcasing versatility and evaluation skills.
 - **Portfolio-Ready**: Includes interactive Colab notebook, clear visualizations, and detailed documentation, tailored for a Master's in AI committee.
