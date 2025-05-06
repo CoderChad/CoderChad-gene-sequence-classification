@@ -73,7 +73,7 @@ gene-sequence-classification/
 
 ## Insights
 - **Bioinformatics**: Processes real genomic data from UCI Genomic Benchmarks, demonstrating sequence analysis and feature engineering.
-- **AI/ML**: Compares multiple models (Random Forest, SVM, Logistic Regression), showcasing versatility and evaluation skills.
+- **AI/ML**: Compares multiple models (Random Forest, SVM, Logistic Regression)
 
 ## References
 - UCI Genomic Benchmarks: [https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks](https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks)
