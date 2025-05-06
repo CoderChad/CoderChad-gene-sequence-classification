@@ -79,10 +79,4 @@ gene-sequence-classification/
 - UCI Genomic Benchmarks: [https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks](https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks)
 - Dataset: `human_nontata_promoters`
 
-## License
-MIT License
 
-## Contact
-[Your Name] ([your.email@example.com](mailto:your.email@example.com))
-
-*Created for a Master's in AI application, May 2025*
